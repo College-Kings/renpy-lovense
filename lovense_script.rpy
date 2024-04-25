@@ -47,6 +47,6 @@ label lovense_connect_via_qr_code:
 
     show expression "lovense_qr_code.jpg" at truecenter
     "4. Scan the above QR code to connect"
-    hide expression "lovense_qr_code.jpg" at truecenter
+    hide expression "lovense_qr_code.jpg"
 
     return
