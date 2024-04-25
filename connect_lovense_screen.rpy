@@ -24,7 +24,7 @@ screen connect_lovense():
             yoffset -200
             spacing 10
 
-            add "lovense_game_mode_example" xalign 0.5
+            add Transform("lovense_game_mode_example", zoom=0.5) xalign 0.5
 
             null height 30
 

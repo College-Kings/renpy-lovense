@@ -1,11 +1,11 @@
 image lovense_background = "_lovense/images/background.webp"
-image lovense_discover_page = "_lovense/images/discover_page.png"
-image lovense_frame = Frame("_lovense/images/frame.png", 3, 3)
-image lovense_game_mode_example = "_lovense/images/game_mode_example.png"
-image lovense_game_mode_page = "_lovense/images/game_mode_page.png"
-image lovense_home_page = "_lovense/images/home_page.png"
+image lovense_discover_page = "_lovense/images/discover_page.webp"
+image lovense_frame = Frame("_lovense/images/frame.webp", 3, 3)
+image lovense_game_mode_example = "_lovense/images/game_mode_example.webp"
+image lovense_game_mode_page = "_lovense/images/game_mode_page.webp"
+image lovense_home_page = "_lovense/images/home_page.webp"
 image lovense_remote_download = "_lovense/images/lovense_remote_download.webp"
-image lovense_scan_qr_button = "_lovense/images/scan_qr_button.png"
+image lovense_scan_qr_button = "_lovense/images/scan_qr_button.webp"
 
 #region Game Mode
 image lovense_remote_discover_frame = Transform("lovense_frame", xysize=(75, 75))
