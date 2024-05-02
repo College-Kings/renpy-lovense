@@ -14,7 +14,7 @@ QR_CODE_ENDPOINT: str = ""
 USERS_ENDPOINT: str = ""
 
 """renpy
-init python:
+init 1 python:
 """
 
 
@@ -90,8 +90,6 @@ class Lovense:
 
             return result
         except Exception as e:
-            if config.developer:
-                raise
             print(e)
             self.server_online = False
 
@@ -133,7 +131,10 @@ class Lovense:
         if result is None:
             return
 
-        self.toys = json.loads(result["data"]["toys"])
+        try:
+            self.toys = json.loads(result["data"]["toys"])
+        except Exception:
+            self.toys = {}
 
     def vibrate(
         self,
@@ -249,8 +250,6 @@ class Lovense:
                 f"{SERVER_URL}/{endpoint}/{persistent.uuid}", result="json"
             )
         except Exception as e:
-            if config.developer:
-                raise
             print(e)
             self.status_message = "User not found."
             return
